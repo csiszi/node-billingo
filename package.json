@@ -9,12 +9,12 @@
   "keywords": [
     "billingo"
   ],
-  "author": "csakbalint",
+  "author": "ghostmonitor",
   "repository": {
     "type": "git",
-    "url": "https://github.com/csakbalint/node-billingo.git"
+    "url": "https://github.com/ghostmonitor/node-billingo.git"
   },
-  "homepage": "https://github.com/csakbalint/node-billingo",
+  "homepage": "https://github.com/ghostmonitor/node-billingo",
   "license": "MIT",
   "dependencies": {
     "async-class": "^0.4.1",
