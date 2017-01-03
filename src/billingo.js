@@ -117,7 +117,7 @@ class Billingo {
     const ts = moment().unix()
     return jwt.encode({
       sub: this._options.key,
-      iat: ts,
+      iat: moment.unix(ts).subtract(60, 'seconds').unix(),
       exp: moment().add(60, 'seconds').unix(),
       iss: 'cli',
       jti: md5(this._options.key + ts)
