@@ -22,7 +22,7 @@ class Billingo {
     this.invoices = {
       get: (id) => this.requestOneAsync('get', `/invoices/${id}`),
       list: () => this.requestAsync('get', '/invoices'),
-      query: (query) => this.requestAsync('get', '/invoices', query),
+      query: (query) => this.requestAsync('get', `/invoices/query`, query),
       blocks: () => this.requestAsync('get', '/invoices/blocks'),
       link: (id) => this.requestAsync('get', `/invoices/${id}/code`),
       cancel: (id) => this.requestAsync('get', `/invoices/${id}/cancel`),
